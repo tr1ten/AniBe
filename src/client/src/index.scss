@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+	margin: 0;
+	overflow: scroll;
+}
+.layout {
+	// width: 100vw;
+	// height: 100vh;
+	.input-wrapper{
+		@apply w-3/5;
+	}
+	// .wrapper {
+	// 	width: 400 !important;
+	// 	@apply border-purple-900 w-4/6 border-solid border-2 m-1 px-2 py-1 rounded-2xl ;
+	// }
+	.element-card {
+		&:hover{
+			position: relative;
+			top: -2px;
+			cursor: pointer;
+		}
+		
+	}
+}
+
