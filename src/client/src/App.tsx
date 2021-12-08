@@ -122,7 +122,7 @@ function App() {
       ? genre.map((option: DOption) => option.value).toString()
       : "";
     const body = await fetch(
-      "http://localhost:3000/search?" +
+      "/api/search?" +
         new URLSearchParams({
           q: query,
           syp: synopsis,

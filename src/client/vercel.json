@@ -1,11 +1,11 @@
 {
     "rewrites": [
       {
-        "source": "http://localhost:3000/:path*",
+        "source": "/api/:path*",
         "destination": "https://anibe-api.herokuapp.com/:path*"
       },
       {
-        "source": "http://localhost:3000/:path*/",
+        "source": "/api/:path*/",
         "destination": "https://anibe-api.herokuapp.com/:path*/"
       }
     ]

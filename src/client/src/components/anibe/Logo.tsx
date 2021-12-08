@@ -3,7 +3,7 @@ import ConnectionCircle from "./ConnectionCircle";
 const Logo = ()=>{
     const [isConnnected, setisConnnected] = useState(false)
     useEffect(() => {
-        fetch("http://localhost:3000/").then((res)=>setisConnnected(res.status===200)).catch((err)=>console.log("error occured during pinging api ",err))
+        fetch("/api").then((res)=>setisConnnected(res.status===200)).catch((err)=>console.log("error occured during pinging api ",err))
     }, [])
     return (
         <div className="p-2 m-2 text-center flex items-center">

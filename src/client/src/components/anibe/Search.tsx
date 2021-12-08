@@ -40,7 +40,7 @@ const Search = ({
 
   const getAsyncOptions = async (q: string) => {
     const body = await fetch(
-      "http://localhost:3000/autocomplete?" + new URLSearchParams({ q })
+      "/api/autocomplete?" + new URLSearchParams({ q })
     ).then((res) => res.json());
     return body.results.map((title: string) => ({
       label: title,
