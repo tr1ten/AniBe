@@ -1,4 +1,4 @@
-import { lazy, useState } from "react";
+import {useState } from "react";
 import Card from "../UI/Card";
 import {Result} from "../../interfaces/index"
 import PlaceHolder from "../UI/Placeholder";

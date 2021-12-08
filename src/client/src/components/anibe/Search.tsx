@@ -1,4 +1,4 @@
-import React, { ChangeEvent, ChangeEventHandler } from "react";
+import React, { ChangeEvent } from "react";
 import Button from "../UI/Button";
 import { useState } from "react";
 import { DOption } from "../../interfaces";
@@ -48,7 +48,7 @@ const Search = ({
     }));
   };
   const boundaryClass =
-    "w-full border-2 border-solid border-purple-500 focus:border-white rounded m-1 ";
+    "w-full border-2 border-solid border-purple-500 focus:border-blue-600 rounded m-1 outline-none ";
   return (
     <div className="flex w-2/3 h-full flex-col items-center justify-center">
       <AsyncSelect
