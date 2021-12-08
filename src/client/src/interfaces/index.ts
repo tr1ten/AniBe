@@ -8,3 +8,7 @@ export interface Option{
     name:string,
     
 }
+export interface DOption {
+    label:string,
+    value:string,
+}

@@ -7,7 +7,7 @@ type ButtonProps={
 }
 const Button = ({children,className,onClick}:ButtonProps)=>{
     return (
-        <button onClick={onClick} className={'rounded-md border-2 m-2 p-2 ' + className}>
+        <button onClick={onClick} className={'rounded-md border-2 m-2 py-2 w-full sm:w-1/5 transition-colors ' + className}>
             {children}
         </button>
     );
