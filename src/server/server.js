@@ -81,7 +81,7 @@ app.get("/search", async (req, res) => {
   const { genres, sortby, q, syp } = req.query;
   const query = {
     index: "mal",
-    size:50,
+    size:10,
     _source: ["title", "uid", "link"],
     body: {
       sort: sortBys[sortby],
